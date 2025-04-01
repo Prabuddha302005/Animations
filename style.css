@@ -6,14 +6,15 @@
     
 }
 
-#minicircle{
+#minicircle {
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
     background-color: #967F60;
     width: 10px;
     height: 10px;
-    z-index: 9;
+    z-index: 9999; 
     border-radius: 100%;
-    position: absolute;
+    position: fixed; 
+    pointer-events: none; 
 }
 #hero{
     width: 100%;
