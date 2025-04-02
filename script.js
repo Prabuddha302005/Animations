@@ -1,13 +1,12 @@
-// Initialize Lenis
-const lenis = new Lenis();
-
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
+if (window.innerWidth > 768) { // Adjust breakpoint as needed
+    const lenis = new Lenis();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+  
   
 
 
